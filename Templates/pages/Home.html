@@ -130,7 +130,7 @@
         $(document).ready(function () {
 
             $.ajax({
-                url: 'http://127.0.0.1:8000/tasks/',
+                url: 'https://homehaven.website/tasks/',
                 method: 'GET',
                 dataType: 'json',
                 success: function (data) {
@@ -183,7 +183,7 @@
                 if (result.isConfirmed) {
                     // If confirmed, make an AJAX request to delete the task
                     $.ajax({
-                        url: 'http://127.0.0.1:8000/tasks/' + taskId + '/', // Replace with your delete URL
+                        url: 'https://homehaven.website/tasks/' + taskId + '/', // Replace with your delete URL
                         method: 'DELETE',
                         success: function (response) {
                             console.log(response);
